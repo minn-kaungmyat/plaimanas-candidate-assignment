@@ -1,0 +1,579 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLAIMANAS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+
+    <header class="header">
+      <div class="nav-container">
+        <div class="left">
+          <div class="currency-dropdown" id="currencyDropdown">
+            <span
+              class="currency-trigger"
+              id="currencyTrigger"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+              aria-controls="currencyMenu"
+            >
+              TH - THB
+              <img
+                src="assets/chevron-down-full.svg"
+                alt=""
+                aria-hidden="true"
+                class="currency-icon"
+              />
+            </span>
+            <div class="currency-menu" id="currencyMenu" aria-hidden="true">
+              <a href="#">US - USD</a>
+              <a href="#">EU - EUR</a>
+              <a href="#">GB - GBP</a>
+            </div>
+          </div>
+        </div>
+
+        <nav class="center-nav">
+          <a href="#" class="active">WOMEN</a>
+          <a href="#">COLLECTIONS</a>
+
+          <div class="dropdown">
+            <a href="#" class="dropdown-trigger">EDITORIAL</a>
+            <div class="submenu">
+              <a href="#">A.S.C</a>
+              <a href="#">BAZAAR</a>
+              <a href="#">ELLE</a>
+              <a href="#">GQ</a>
+            </div>
+          </div>
+
+          <a href="#">NEWS</a>
+          <a href="#">STORIES</a>
+        </nav>
+
+        <button
+          class="mobile-menu-toggle"
+          id="mobileMenuToggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobileMenuPanel"
+        >
+          <svg
+            class="menu-icon"
+            viewBox="0 0 20 18"
+            width="20"
+            height="18"
+            aria-hidden="true"
+          >
+            <line
+              class="menu-line menu-line-top"
+              x1="0"
+              y1="5"
+              x2="20"
+              y2="5"
+            />
+            <line
+              class="menu-line menu-line-bottom"
+              x1="0"
+              y1="13"
+              x2="20"
+              y2="13"
+            />
+          </svg>
+        </button>
+
+        <div class="right">
+          <a href="#">SIGN IN</a>
+          <img class="cart" src="assets/cart.svg" alt="Cart" />
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu-panel" id="mobileMenuPanel" aria-hidden="true">
+      <nav class="mobile-menu-nav" aria-label="Mobile menu">
+        <a href="#" class="mobile-menu-link">WOMEN</a>
+        <a href="#" class="mobile-menu-link">COLLECTIONS</a>
+
+        <div class="mobile-editorial-group" id="mobileEditorialGroup">
+          <button
+            class="mobile-editorial-toggle"
+            id="mobileEditorialToggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobileEditorialSubmenu"
+          >
+            EDITORIAL
+            <img
+              src="assets/chevron-down.svg"
+              alt=""
+              aria-hidden="true"
+              class="mobile-editorial-icon"
+            />
+          </button>
+
+          <div
+            class="mobile-editorial-submenu"
+            id="mobileEditorialSubmenu"
+            aria-hidden="true"
+          >
+            <a href="#">A.S.C</a>
+            <a href="#">BAZAAR</a>
+            <a href="#">ELLE</a>
+            <a href="#">GQ</a>
+            <a href="#">L'OFFICIAL THAILAND</a>
+            <a href="#">NUMERO</a>
+            <a href="#">VOGUE</a>
+          </div>
+        </div>
+
+        <a href="#" class="mobile-menu-link">NEWS</a>
+        <a href="#" class="mobile-menu-link">STORIES</a>
+      </nav>
+
+      <div class="mobile-menu-footer">
+        <img
+          src="assets/PLAIMANAS.svg"
+          alt="PLAIMANAS"
+          class="mobile-menu-logo"
+        />
+      </div>
+    </div>
+
+    <!-- <h1 class="hero-title">PLAIMANAS</h1> -->
+
+    <main>
+      <section class="hero">
+        <img src="assets/PLAIMANAS.svg" alt="PLAIMANAS" class="hero-title" />
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="hero-video"
+          poster="assets/hero-poster.png"
+        >
+          <source src="assets/hero-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section class="new-arrivals">
+        <div class="container">
+          <div class="new-arrivals-image">
+            <img src="assets/new-arrival.jpg" alt="New Arrival" />
+            <h1 class="new-arrivals-title">NEW</h1>
+          </div>
+          <div class="new-arrivals-content">
+            <h1>Sed egestas, nibh a condimentum imperdiet</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              ornare, nisl non rhoncus commodo, turpis elit ultricies justo,
+              vitae molestie quam justo ut lacus. Proin vitae
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="best-seller">
+        <div class="container">
+          <div class="best-seller-video">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              class="best-seller-video"
+              poster="assets/best-seller-poster.jpg"
+            >
+              <source src="assets/best-seller-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <h1 class="best-seller-title">BESTSELLER</h1>
+          </div>
+          <div class="best-seller-content">
+            <h1>Sed egestas, nibh a condimentum imperdiet</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              ornare, nisl non rhoncus commodo, turpis elit ultricies justo,
+              vitae molestie quam justo ut lacus. Proin vitae
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="collections">
+        <div class="container">
+          <div class="collections-grid">
+            <div class="collection-item item-1">
+              <img
+                src="assets/collection-1.jpg"
+                alt="Collection 01"
+                class="media-layer default-layer"
+              />
+              <video
+                src="assets/collection-1-video.mp4"
+                class="media-layer hover-layer"
+                loop
+                muted
+                playsinline
+              ></video>
+              <h2 class="collection-title">COLLECTION 01</h2>
+            </div>
+
+            <div class="collection-item item-2">
+              <div
+                class="media-layer default-layer"
+                style="
+                  background-image: url(&quot;assets/collection-2.jpg&quot;);
+                "
+              ></div>
+              <div
+                class="media-layer hover-layer"
+                style="
+                  background-image: url(&quot;assets/collection-image.jpg&quot;);
+                "
+              ></div>
+              <h2 class="collection-title">COLLECTION 02</h2>
+            </div>
+
+            <div class="collection-item item-3">
+              <div
+                class="media-layer default-layer"
+                style="
+                  background-image: url(&quot;assets/collection-3.jpg&quot;);
+                "
+              ></div>
+              <div
+                class="media-layer hover-layer"
+                style="
+                  background-image: url(&quot;assets/collection-image.jpg&quot;);
+                "
+              ></div>
+              <h2 class="collection-title">COLLECTION 03</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee">
+        <div class="marquee-container">
+          <div class="marquee-track">
+            <h1 class="marquee-text">NEW ARRIVAL</h1>
+            <img
+              src="assets/arrow-left.svg"
+              alt="Arrow"
+              class="marquee-arrow"
+            />
+            <h1 class="marquee-text">BEST SELLING</h1>
+            <img
+              src="assets/arrow-right.svg"
+              alt="Arrow"
+              class="marquee-arrow"
+            />
+          </div>
+
+          <div class="marquee-track">
+            <h1 class="marquee-text">NEW ARRIVAL</h1>
+            <img
+              src="assets/arrow-left.svg"
+              alt="Arrow"
+              class="marquee-arrow"
+            />
+            <h1 class="marquee-text">BEST SELLING</h1>
+            <img
+              src="assets/arrow-right.svg"
+              alt="Arrow"
+              class="marquee-arrow"
+            />
+          </div>
+
+          <div class="marquee-track">
+            <h1 class="marquee-text">NEW ARRIVAL</h1>
+            <img
+              src="assets/arrow-left.svg"
+              alt="Arrow"
+              class="marquee-arrow"
+            />
+            <h1 class="marquee-text">BEST SELLING</h1>
+            <img
+              src="assets/arrow-right.svg"
+              alt="Arrow"
+              class="marquee-arrow"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="features-grid">
+            <div class="feature-item">
+              <h2 class="feature-title">WORLDWIDE SHIPPING</h2>
+              <p class="feature-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare, nisl non rhoncus commodo, turpis elit ultricies justo,
+                vitae molestie quam justo ut lacus. Proin vitae
+              </p>
+            </div>
+
+            <div class="feature-item">
+              <h2 class="feature-title">CUSTOMER SERVICE</h2>
+              <p class="feature-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare, nisl non rhoncus commodo, turpis elit ultricies justo,
+                vitae molestie quam justo ut lacus. Proin vitae
+              </p>
+            </div>
+
+            <div class="feature-item">
+              <h2 class="feature-title">SECURE PAYMENT</h2>
+              <p class="feature-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare, nisl non rhoncus commodo, turpis elit ultricies justo,
+                vitae molestie quam justo ut lacus. Proin vitae
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <div class="faq-header">
+            <h2 class="faq-title">FREQUENTLY ASKED QUESTIONS</h2>
+            <p class="faq-subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              ornare, nisl non rhoncus commodo.
+            </p>
+
+            <div class="faq-filters">
+              <button class="filter-btn" data-filter="orders">ORDERS</button>
+              <button class="filter-btn active" data-filter="shipping">
+                SHIPPING
+              </button>
+              <button class="filter-btn" data-filter="returns">
+                RETURNS & EXCHANGES
+              </button>
+              <button class="filter-btn" data-filter="sizing">
+                SIZING & PRODUCTS
+              </button>
+            </div>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item active" data-category="shipping">
+              <div class="faq-question">
+                DO YOU OFFER INTERNATIONAL SHIPPING?
+                <span class="faq-icon"></span>
+              </div>
+              <div class="faq-answer">
+                <div class="answer-content">
+                  <p>
+                    Yes, we offer international shipping to selected countries.
+                    Shipping rates and delivery timelines are calculated at
+                    checkout based on your destination.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" data-category="shipping">
+              <div class="faq-question">
+                HOW LONG DOES DELIVERY TAKE?
+                <span class="faq-icon"></span>
+              </div>
+              <div class="faq-answer">
+                <div class="answer-content">
+                  <p>
+                    Delivery times vary by region. Domestic orders typically
+                    arrive within 3-7 business days, while international
+                    shipments may take 7-14 business days.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" data-category="shipping">
+              <div class="faq-question">
+                HOW CAN I TRACK MY ORDER?
+                <span class="faq-icon"></span>
+              </div>
+              <div class="faq-answer">
+                <div class="answer-content">
+                  <p>
+                    Once your order ships, you will receive a confirmation email
+                    with a tracking number and link so you can monitor delivery
+                    progress.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" data-category="returns" style="display: none">
+              <div class="faq-question">
+                WHAT IS YOUR RETURN POLICY?
+                <span class="faq-icon"></span>
+              </div>
+              <div class="faq-answer">
+                <div class="answer-content">
+                  <p>
+                    Items can be returned within 14 days of receipt, provided
+                    they are unworn, unwashed, and in original condition with
+                    tags attached.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="inquiry">
+        <div class="container">
+          <div class="inquiry-grid">
+            <div class="inquiry-info">
+              <h2 class="inquiry-title">MAKE AN INQUIRY</h2>
+              <p class="inquiry-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                ornare, nisl non rhoncus commodo.
+              </p>
+            </div>
+
+            <form class="inquiry-form">
+              <div class="form-group radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="type" value="onsite" checked />
+                  <span class="custom-radio"></span>
+                  Onsite
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="type" value="hybrid" />
+                  <span class="custom-radio"></span>
+                  Hybrid
+                </label>
+              </div>
+
+              <div class="form-row">
+                <div class="input-group">
+                  <input type="text" placeholder="Full name*" required />
+                </div>
+                <div class="input-group">
+                  <input type="email" value="Plaimanas@gmail.com" />
+                  <label class="floating-label">Email*</label>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="input-group">
+                  <input type="tel" placeholder="Phone Number*" />
+                </div>
+                <div class="input-group">
+                  <select id="subject">
+                    <option value="" disabled selected hidden>
+                      Select Subject*
+                    </option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Support</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div
+                  class="input-group"
+                  id="hybrid-input-wrapper"
+                  style="grid-column: 1 / span 2; display: none"
+                >
+                  <input
+                    type="text"
+                    id="dynamic-preference-input"
+                    placeholder="Meeting Platform (e.g., Zoom, Teams)*"
+                  />
+                </div>
+              </div>
+              <div class="form-group checkbox-group">
+                <label>
+                  <input type="checkbox" required />
+                  I agree to all terms & conditions
+                </label>
+              </div>
+
+              <button type="submit" class="submit-btn">SEND</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h4 class="footer-heading">ABOUT</h4>
+            <ul class="footer-links">
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Editorial</a></li>
+              <li><a href="#">Stories</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-heading">HELP</h4>
+            <ul class="footer-links">
+              <li><a href="#">Payment Notification</a></li>
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-heading">SOCIAL</h4>
+            <ul class="footer-links">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-heading">LEGAL</h4>
+            <ul class="footer-links">
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookies Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column newsletter-column">
+            <h4 class="footer-heading">NEWSLETTER</h4>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input type="email" placeholder="Email" required />
+              </div>
+              <button type="submit" class="subscribe-btn">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">©PLAIMANAS</p>
+          <a href="#" class="credit">Web by ::*</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
